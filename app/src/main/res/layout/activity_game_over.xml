@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#570101">
+
+    <ImageView
+        android:id="@+id/ivRocket"
+        android:layout_width="411dp"
+        android:layout_height="336dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="-32dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/crashed" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/ivRocket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="107dp"
+        android:text="High Score: 0"
+        android:textAlignment="center"
+        android:textColor="#A3FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvHighScore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTint="#000000"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Restart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnRestart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="81dp"
+        android:backgroundTint="#000000"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="1sp" />
+
+
+</RelativeLayout>
